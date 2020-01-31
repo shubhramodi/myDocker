@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+
+  # Frontend Service
+  node:
+    image: frontend
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: always
+
